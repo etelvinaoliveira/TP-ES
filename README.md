@@ -6,18 +6,23 @@ Este projeto tem como objetivo criar um site para publicação de artigos voltad
 
 ## Principais Features:
 
-### Cadastro de Usuário: Para realizar publicações, o usuário precisa realizar o login (ou cadastro) para sua autenticação no sistema. Assim, os dados são coletados e inseridos no banco de dados.
+#### Cadastro de Usuário
+Para realizar publicações, o usuário precisa realizar o login (ou cadastro) para sua autenticação no sistema. Assim, os dados são coletados e inseridos no banco de dados.
 
-### Filtragem por busca: Os usuários possuem a opção de filtrar artigos por palavras-chave e/ou tópicos relevantes ao usuário.
-
-
-### Gerenciamento de Publicações: O usuário, após realizar a sua autenticação no sistema, pode criar, editar, remover e publicar artigos.
-
-
-### Filtragem por Categoria: os usuários podem filtrar os posts relacionados a uma categoria específica.
+#### Filtragem por busca 
+Os usuários possuem a opção de filtrar artigos por palavras-chave e/ou tópicos relevantes ao usuário.
 
 
-### Interações com o post: os usuários poderão favoritar posts e comentar qualquer publicação.
+#### Gerenciamento de Publicações
+O usuário, após realizar a sua autenticação no sistema, pode criar, editar, remover e publicar artigos.
+
+
+#### Filtragem por Categoria
+Os usuários podem filtrar os posts relacionados a uma categoria específica.
+
+
+#### Interações com o post
+Os usuários poderão favoritar posts e comentar qualquer publicação.
 
 
 
