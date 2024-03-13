@@ -50,7 +50,11 @@ Pedro Henrique: Full Stack (Subir o site na cloud)
 ## Tecnologias:
 
 Python
+
 Django 
+
 SQLite
+
 HTML
+
 CSS
