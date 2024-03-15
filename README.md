@@ -31,30 +31,30 @@ Os usuários poderão favoritar posts e comentar qualquer publicação.
 
 ##  Membros da equipe e papel
 
-Etelvina: Full Stack
+* Etelvina: Full Stack
 
 
-Indra: Full Stack
+* Indra: Full Stack
 
 
-Leonardo: Full Stack
+* Leonardo: Full Stack
 
 
-Rafaela: Full Stack
+* Rafaela: Full Stack
 
 
-Pedro Henrique: Full Stack (Subir o site na cloud)
+* Pedro Henrique: Full Stack
 
 
 
 ## Tecnologias:
 
-Python
+* Python
 
-Django 
+* Django 
 
-SQLite
+* SQLite
 
-HTML
+* HTML
 
-CSS
+* CSS
