@@ -25,25 +25,21 @@ Os usuários podem filtrar os posts relacionados a uma categoria específica.
 Os usuários poderão favoritar posts e comentar qualquer publicação.
 
 
-
-
-
-
 ##  Membros da equipe e papel
 
-* Etelvina: Full Stack
+* Etelvina Costa Santos Sá Oliveira: Full Stack
 
 
-* Indra: Full Stack
+* Indra Matsiendra Cardoso Dias Ribeiro: Full Stack
 
 
-* Leonardo: Full Stack
+* Leonardo de Oliveira Maia: Full Stack
 
 
-* Rafaela: Full Stack
+* Rafaela de Fátima Silva Alexandre: Full Stack
 
 
-* Pedro Henrique: Full Stack
+* Pedro Henrique Meireles de Almeida: Full Stack
 
 
 
@@ -58,3 +54,53 @@ Os usuários poderão favoritar posts e comentar qualquer publicação.
 * HTML
 
 * CSS
+
+## Backlog do Produto
+
+* Como usuário, eu gostaria de me cadastrar no site
+* Como usuário, eu gostaria de fazer login no site
+* Como usuário, eu gostaria de criar publicações
+* Como usuário, eu gostaria de ver a lista das publicações do site
+* Como usuário, eu gostaria de ler publicações
+* Como usuário, eu gostaria de editar e deletar publicações
+* Como usuário, eu gostaria de realizar a busca de publicações por título
+* Como usuário, eu gostaria de filtrar por categoria publicações
+* Como usuário, eu gostaria de realizar a busca de publicações por autor
+* Como usuário, eu gostaria de visualizar o histórico das últimas publicações lidas
+* Como usuário, eu gostaria de visualizar as minhas publicações
+* Como usuário, eu gostaria de comentar publicações
+* Como usuário, eu gostaria de curtir publicações
+* Como usuário, eu gostaria de salvar publicações
+
+## Backlog da Sprint
+
+### História #1: Como usuário, eu gostaria de me cadastrar no site
+#### Tarefas e responsáveis:
+* Instalar o Django [Todos]
+* Instalar o SQLite, criar banco de dados e tabelas de usuário [Indra]
+* Implementar uma versão inicial da tela de cadastro do usuário [Rafaela]
+* Implementar regras para o cadastro do nome e senha do usuário [Rafaela]
+* Implementar no backend a lógica de cadastro do usuário [Rafaela] 
+
+### História #2: Como usuário, eu gostaria de fazer login no site
+#### Tarefas e responsáveis:
+* Implementar uma versão inicial da tela de login do usuário [Leonardo]
+* Implementar no backend a lógica de login do usuário [Leonardo]
+
+### História #3: Como usuário, eu gostaria de ver a lista das publicações do site
+#### Tarefas e responsáveis:
+* Implementar uma versão inicial da tela de listagem de posts, que será a tela inicial do site [Etelvina]
+* Criar no banco de dados tabelas de publicações [Indra]
+* Ordenar na tela inicial as publicações por data da última atualização [Etelvina]
+* Implementar no backend a lógica de listagem de posts [Etelvina]
+
+### História #4: Como usuário, eu gostaria de ler publicações
+#### Tarefas e responsáveis:
+* Implementar uma versão inicial da tela de visualização do artigo completo [Indra]
+* Implementar no backend a lógica de visualização de posts [Indra]
+
+### História #5: Como usuário, eu gostaria de criar publicações
+#### Tarefas e responsáveis:
+* Implementar uma versão inicial da tela de criação de posts [Pedro]
+* Restringir a criação de publicações a usuários devidamente logados no site [Pedro]
+* Implementar no backend a lógica de tela de criação de posts [Pedro]
