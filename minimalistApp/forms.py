@@ -4,7 +4,6 @@ from django.contrib.auth.models import UserCreationForm
 from .models import Post
 from django.contri.auth.forms import AuthenticationForm
 
-
 class RegistrationForm(UserCreationForm):
     email = forms.EmailField()
 
