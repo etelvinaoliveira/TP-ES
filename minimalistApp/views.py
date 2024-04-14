@@ -31,3 +31,9 @@ def custom_login(request):
         form = LoginForm()
 
     return render(request, 'registration/login.html', {'form': form})
+
+@login_required
+def logout(request):
+    logout(request)
+     # Redirect to your home page or any other page after logout
+    return redirect('/')
