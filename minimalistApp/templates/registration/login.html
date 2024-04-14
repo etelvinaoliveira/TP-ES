@@ -1,4 +1,4 @@
-{% extends "minimalistAPP/base.html" %}
+{% extends "minimalistApp/base.html" %}
 {% load static %}
 
 {% block content %}
@@ -23,7 +23,7 @@
                 </tr>
             </table>
     
-            <input type="submit" value="Login" name="login_button"/>
+            <input type="submit" value="Login" name="login_button" class="btnLogin"/>
             <input type="hidden" name="next" value="{{ next }}" />
         </form>
     
@@ -48,7 +48,8 @@
                     <td>{{ registration_form.password2 }}</td>
                 </tr>
             </table>
-            <input type="submit" value="Register"/>
+    
+            <input type="submit" value="Register" class="btnRegister"/>
         </form>
     </div>
 {% endblock %}

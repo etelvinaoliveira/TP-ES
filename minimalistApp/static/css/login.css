@@ -11,3 +11,16 @@
 .logReg{
    padding: 5rem 25rem;
 }
+
+.btnLogin, .btnRegister{
+    margin-top: 10px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding: 1px 5px;
+    width: 80px;
+    height: 30px;
+    text-decoration: none;
+    margin-bottom: 5px;  
+  }
