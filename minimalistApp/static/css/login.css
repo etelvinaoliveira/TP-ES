@@ -1,0 +1,13 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+.login{
+    margin-bottom: 20px;
+}
+
+.logReg{
+   padding: 5rem 25rem;
+}
