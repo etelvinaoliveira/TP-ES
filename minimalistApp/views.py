@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
+from .models import Post, Category
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, authenticate, logout
@@ -37,3 +38,13 @@ def logout(request):
     logout(request)
      # Redirect to your home page or any other page after logout
     return redirect('/')
+
+def postDetail(request, pk):
+  post = get_object_or_404(Post, pk=pk)
+  search = request.GET.get('search')
+  category = Category.objects.all()
+  user = request.user
+  if search:
+    post = Post.objects.filter(title__icontains = search)
+    return render(request, 'blog/postList.html', {'posts': post, 'category': category})
+  return render(request, 'blog/postDetail.html', {'post': post, 'user': user})
