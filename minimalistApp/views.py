@@ -69,4 +69,4 @@ def postList(request):
   search = request.GET.get('search')
   if search:
     posts = Post.objects.filter(title__icontains = search)
-  return render(request, 'blog/postList.html', {'posts': posts, 'category': category})
+  return render(request, 'minimalistApp/postList.html', {'posts': posts, 'category': category})

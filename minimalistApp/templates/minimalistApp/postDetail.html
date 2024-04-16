@@ -21,10 +21,6 @@
         <p class="author"> {{post.author}} <p>
         <p class="date">{{ post.published_date }}</p>
       </div>
-      {% if post.author == user %}
-        <a class="btnDefault" href="{% url 'postEdit' pk=post.pk %}">Editar Post</a>
-        <a class="btnDefault" href="{% url 'postRemove' pk=post.pk %}">Excluir Post</a>
-      {% endif %}
     {% else %}
         <a class="btnDefault" href="{% url 'postPublish' pk=post.pk %}">Publish</a>
     {% endif %}
