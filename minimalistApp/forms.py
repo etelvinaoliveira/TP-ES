@@ -12,3 +12,9 @@ class RegistrationForm(UserCreationForm):
         
 class LoginForm(AuthenticationForm):
     pass
+
+class PostForm(forms.ModelForm):
+
+  class Meta:
+    model = Post
+    fields = ('title', 'subtitle', 'category','text')

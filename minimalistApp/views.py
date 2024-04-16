@@ -46,5 +46,20 @@ def postDetail(request, pk):
   user = request.user
   if search:
     post = Post.objects.filter(title__icontains = search)
-    return render(request, 'blog/postList.html', {'posts': post, 'category': category})
-  return render(request, 'blog/postDetail.html', {'post': post, 'user': user})
+    return render(request, 'minimalistApp/postList.html', {'posts': post, 'category': category})
+  return render(request, 'minimalistApp/postDetail.html', {'post': post, 'user': user})
+
+@login_required
+def postNew(request):
+  if request.method == "POST":
+      form = PostForm(request.POST)
+      if form.is_valid():
+          post = form.save(commit=False)
+          post.author = request.user
+          #post.published_date = timezone.now()
+          post.save()
+          form.save_m2m()
+          return redirect('postDetail', pk=post.pk)
+  else:
+      form = PostForm() 
+  return render(request, 'minimalistApp/postNew.html', {'form': form})
