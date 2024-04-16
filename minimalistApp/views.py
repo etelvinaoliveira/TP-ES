@@ -70,3 +70,9 @@ def postList(request):
   if search:
     posts = Post.objects.filter(title__icontains = search)
   return render(request, 'minimalistApp/postList.html', {'posts': posts, 'category': category})
+
+@login_required
+def postPublish(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    post.publish()
+    return redirect('/')
