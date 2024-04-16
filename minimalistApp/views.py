@@ -36,18 +36,7 @@ def custom_login(request):
 @login_required
 def logout(request):
     logout(request)
-     # Redirect to your home page or any other page after logout
     return redirect('/')
-
-def postDetail(request, pk):
-  post = get_object_or_404(Post, pk=pk)
-  search = request.GET.get('search')
-  category = Category.objects.all()
-  user = request.user
-  if search:
-    post = Post.objects.filter(title__icontains = search)
-    return render(request, 'minimalistApp/postList.html', {'posts': post, 'category': category})
-  return render(request, 'minimalistApp/postDetail.html', {'post': post, 'user': user})
 
 @login_required
 def postNew(request):
@@ -63,3 +52,21 @@ def postNew(request):
   else:
       form = PostForm() 
   return render(request, 'minimalistApp/postNew.html', {'form': form})
+
+def postDetail(request, pk):
+  post = get_object_or_404(Post, pk=pk)
+  search = request.GET.get('search')
+  category = Category.objects.all()
+  user = request.user
+  if search:
+    post = Post.objects.filter(title__icontains = search)
+    return render(request, 'minimalistApp/postList.html', {'posts': post, 'category': category})
+  return render(request, 'minimalistApp/postDetail.html', {'post': post, 'user': user})
+
+def postList(request):
+  posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date') 
+  category = Category.objects.all()
+  search = request.GET.get('search')
+  if search:
+    posts = Post.objects.filter(title__icontains = search)
+  return render(request, 'minimalistApp/postList.html', {'posts': posts, 'category': category})
