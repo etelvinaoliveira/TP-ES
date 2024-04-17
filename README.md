@@ -137,3 +137,16 @@ Os usuários poderão favoritar posts e comentar qualquer publicação.
 #### Tarefas e responsáveis:
 * Implementar uma versão inicial da tela de visualização do artigo completo [Indra]
 * Implementar no backend a lógica de visualização de posts [Indra]
+
+
+
+### Diagrama UML
+
+![UML](https://github.com/etelvinaoliveira/TP-ES/assets/85119132/f438f08c-3bb0-40fe-ae30-f69e16a230fc)
+
+
+### Diagrama de atividades
+
+![Diagrama_sem_nome drawio](https://github.com/etelvinaoliveira/TP-ES/assets/85119132/81ce9b3e-720d-4698-9785-090de24f22d2)
+
+
