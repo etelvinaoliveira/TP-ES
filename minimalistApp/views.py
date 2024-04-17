@@ -4,7 +4,7 @@ from .models import Post, Category
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login, authenticate, logout
-from .forms import RegistrationForm, LoginForm
+from .forms import RegistrationForm, LoginForm, PostForm
 
 def register(request):
     if request.method == 'POST':
@@ -45,7 +45,6 @@ def postNew(request):
       if form.is_valid():
           post = form.save(commit=False)
           post.author = request.user
-          #post.published_date = timezone.now()
           post.save()
           form.save_m2m()
           return redirect('postDetail', pk=post.pk)

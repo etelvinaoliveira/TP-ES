@@ -20,14 +20,14 @@
   flex-direction: column;
 }
 
-.log a{
+.log a, button{
   background-color: #000;
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   padding: 5px 25px;
   text-decoration: none;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .inputGroupPrepend{
@@ -58,7 +58,7 @@
   outline: 0;
 }
 
-.pageHeader h1 a{
+.pageHeader h1 a, form{
   font-family: 'Libre Baskerville', serif;
   text-decoration: none;
   color: #000;
