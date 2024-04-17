@@ -1,17 +1,16 @@
 .login {
     font-family: 'Roboto', sans-serif;
-    font-size: 35px;
-    margin-bottom: 30px;
-    text-align: center;
-    padding-top: 1rem;
-}
-
-.cadastro {
-    font-family: 'Roboto', sans-serif;
     font-size: 40px;
     margin-bottom: 30px;
     text-align: center;
-    padding-top: 2rem;
+    padding: 1.5rem 0;
+}
+
+.register {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .logReg {
@@ -20,7 +19,6 @@
     align-items: center;
     height: 60vh;
     flex-direction: column;
-    margin-left: 25rem;
 }
 
 form {
@@ -58,13 +56,13 @@ form input:focus {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    padding: 5px 20px;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
-    margin-top: 0.1rem;
+    margin-top: 15px;
     width: 100%;
 }
 
