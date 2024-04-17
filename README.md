@@ -141,6 +141,7 @@ Os usuários poderão favoritar posts e comentar qualquer publicação.
 ### História #6: Como usuário, eu gostaria de editar e remover minhas publicações
 #### Tarefas e responsáveis:
 * Implementar no backend a lógica de edição e remoção de posts [Etelvina]
+* Restringir a edição e remoção ao autor do post [Etelvina]
 
 
 ### Diagrama de classes
