@@ -75,3 +75,24 @@ def postPublish(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.publish()
     return redirect('/')
+
+@login_required
+def postRemove(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    post.delete()
+    return redirect('/')
+
+@login_required
+def postEdit(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    if request.method == "POST":
+        form = PostForm(request.POST, instance=post)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            return redirect('postDetail', pk=post.pk)
+    else:
+        form = PostForm(instance=post)
+    return render(request, 'minimalistApp/postNew.html', {'form': form})
