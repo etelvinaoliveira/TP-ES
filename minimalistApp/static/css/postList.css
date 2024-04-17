@@ -10,7 +10,7 @@
   padding: 15px 30px;
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 
 .log{
@@ -58,12 +58,13 @@
   outline: 0;
 }
 
-.pageHeader h1 a, form{
+.pageHeader h1 a{
   font-family: 'Libre Baskerville', serif;
   text-decoration: none;
   color: #000;
   position: relative;
   top: 1rem;
+  margin-bottom: 3rem;
 }
 
 .contentContainer{

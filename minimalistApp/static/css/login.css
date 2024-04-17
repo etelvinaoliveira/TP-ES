@@ -66,9 +66,10 @@
     top: 0.5rem;
 }
   
-h2{
+.logReg h2{
     font-family: 'Roboto', sans-serif;
     font-size: 35px;
+    padding-top: 0.5rem;
 }
   
 .logReg{
