@@ -147,6 +147,6 @@ Os usuários poderão favoritar posts e comentar qualquer publicação.
 
 ### Diagrama de atividades
 
-![Diagrama_sem_nome drawio](https://github.com/etelvinaoliveira/TP-ES/assets/85119132/81ce9b3e-720d-4698-9785-090de24f22d2)
 
+![Diagrama_Atividades](https://github.com/etelvinaoliveira/TP-ES/assets/85119132/9d411971-310d-4dca-bce0-5f4169828860)
 
