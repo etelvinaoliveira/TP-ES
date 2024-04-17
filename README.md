@@ -138,6 +138,9 @@ Os usuários poderão favoritar posts e comentar qualquer publicação.
 * Implementar uma versão inicial da tela de visualização do artigo completo [Indra]
 * Implementar no backend a lógica de visualização de posts [Indra]
 
+### História #6: Como usuário, eu gostaria de editar e remover minhas publicações
+#### Tarefas e responsáveis:
+* Implementar no backend a lógica de edição e remoção de posts [Etelvina]
 
 
 ### Diagrama de classes
