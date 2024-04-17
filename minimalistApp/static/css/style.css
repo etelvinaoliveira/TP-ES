@@ -21,16 +21,6 @@
     margin-right: 45px;
 }
 
-.authenticated-links {
-    display: flex;
-}
-
-.authenticated-links a{
-    position: relative;
-    width: 150px;
-    height: 40px;
-}
-
 .log a,
 .log button {
     position: relative;
@@ -44,23 +34,11 @@
     margin-bottom: 5px;
 }
 
-.authenticated-links a {
-    display: inline-block;
-    background-color: #000;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    padding: 5px 15px;
-    text-decoration: none;
-    margin-bottom: 5px;
-}
-
 .pageHeader h1 a {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     font-size: 22px;
     color: #000;
-    margin-bottom: 5rem;
 }
 
 .contentContainer {
