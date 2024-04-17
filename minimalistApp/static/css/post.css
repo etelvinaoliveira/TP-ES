@@ -1,8 +1,9 @@
 .post{
   padding-bottom: 30px;
+  padding-left: 10rem;
   display: flex;
   flex-direction: column;
-  width: 100rem;
+  width: 50rem;
 }
 
 .post .postTitle h2 a{
