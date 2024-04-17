@@ -1,0 +1,88 @@
+.login {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.register {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.register h2{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.logReg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    flex-direction: column;
+}
+
+form {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+table {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+form input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+form p{
+    padding-top: 2rem;
+}
+
+form input:focus {
+    outline: none;
+}
+
+.btnLogin,
+.btnRegister {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.register-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.register-section .btnRegister {
+    margin-top: 20px;
+    width: 50%;
+}

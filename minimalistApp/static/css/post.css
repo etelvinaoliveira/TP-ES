@@ -1,57 +1,98 @@
-.post {
-  margin-bottom: 20px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  background-color: #f9f9f9;
-  transition: background-color 0.3s ease;
-  width: 100%;
-  max-width: 3000px;
-  margin-left: auto;
-  margin-right: auto; 
+.post{
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100rem;
 }
 
-.postTitle h2 {
-  margin: 0;
-  font-size: 24px;
-  color: #000;
+.post .postTitle h2 a{
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  font-size: 20px;
+  text-decoration: none;
 }
 
-.postSubtitle {
-  margin-top: 10px;
-  color: #666;
+.postTitle{
+  padding-bottom: 5px;  
 }
 
-.categories {
-  margin-top: 10px;
+.post .postSubtitle .subtitle{
+  font-family: 'Roboto', sans-serif;
+  color: #6B6B6B;
+  font-size: 16px;
 }
 
-.categories .category {
-  display: inline-block;
-  margin-right: 10px;
-  padding: 5px 10px;
-  background-color: #333;
-  color: #fff;
+.postSubtitle{
+  padding-bottom: 10px;  
+}
+
+.date, .author{
+  color: #6B6B6B;  
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  padding-right: 10px;
+}
+
+.categories, .authorDate{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+  color: #6B6B6B;  
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.category{
+  padding-right: 10px;
+}
+
+.col-md-8{
+  width: 40rem;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.selectCategory{
+  position: relative;
+  left: 2rem;
+  padding: 0 40px;
+}
+
+.filterCategory{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 30rem;
+}
+
+.categ{
+  padding: 5px 5px;
+  background-color: #F2F2F2;
   border-radius: 5px;
+  margin: 5px;
 }
 
-.authorDate {
-  margin-top: 10px;
-}
-
-.authorDate p {
-  margin: 0;
-  color: #888;
-}
-
-.post-link {
+.categ p a{
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   color: #000;
+  font-size: 14px;
 }
 
-.post-link:hover {
+.selectCategory h2{
+  padding-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btnDefault{
+  background-color: #000;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  padding: 5px 25px;
   text-decoration: none;
-}
-
-.post:hover {
-  background-color: #b9b9b9;
+  margin-bottom: 5px;
 }

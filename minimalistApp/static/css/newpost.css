@@ -1,8 +1,5 @@
-.contentContainer {
-    padding: 30px;
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
+.contentContainer{
+    margin-top: 0.2rem;
 }
 
 .edit {
@@ -58,6 +55,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 35rem;
 }
 
 label[for="id_text"],

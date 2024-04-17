@@ -17,6 +17,10 @@
             {% if user.is_authenticated %}
                 <div class="authenticated-links">
                     <a href="{% url 'postNew' %}" class="top-menu">New Post</a>
+                    <form action="{% url 'logout' %}" method="post">
+                        {% csrf_token %}
+                        <button type="submit">Logout</button>
+                    </form>
                 </div>
             {% else %}
                 <a href="{% url 'login' %}" class="top-menu">Login</a>
