@@ -45,7 +45,6 @@ def postNew(request):
       if form.is_valid():
           post = form.save(commit=False)
           post.author = request.user
-          #post.published_date = timezone.now()
           post.save()
           form.save_m2m()
           return redirect('postDetail', pk=post.pk)
